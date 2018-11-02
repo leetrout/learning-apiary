@@ -5,7 +5,30 @@ HOST: http://polls.apiblueprint.org/
 
 Polls is a simple API allowing consumers to view polls and vote in them.
 
+## Questions Collection [/auth]
+
+### Authenticate [POST]
+
+Send username and token
+
++ Request
+
+    + Headers
+        
+        Authentication: Token 123
+
++ Response 200 (application/json)
+    
+        [
+            {
+                "user_id": 1,
+            }
+        ]
+
 ## Questions Collection [/questions]
+
+
++ Response 404
 
 ### List All Questions [GET]
 
